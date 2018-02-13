@@ -1,6 +1,6 @@
 {
   "name": "callbag-sample",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Callbag operator that samples a pullable source when a listenable source emits",
   "repository": {
     "type": "git",
