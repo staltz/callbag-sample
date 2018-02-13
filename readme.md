@@ -14,7 +14,7 @@ const interval = require('callbag-interval');
 const forEach = require('callbag-for-each');
 const sample = require('callbag-sample');
 
-const source = sample(interval(1000))(fromIter('hello'));
+const source = sample(fromIter('hello'))(interval(1000));
 
 forEach(x => console.log(x))(source); // h
                                       // e
