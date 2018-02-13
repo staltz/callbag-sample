@@ -1,4 +1,4 @@
-const sample = listenable => pullable => (start, sink) => {
+const sample = pullable => listenable => (start, sink) => {
   if (start !== 0) return;
   let ltalkback;
   let ptalkback;
