@@ -111,7 +111,7 @@ test('it ends both listenable and sink when pullable ends', t => {
 
   const pullable = makePullable();
   const listenable = makeListenable();
-  const source = sample(listenable)(pullable);
+  const source = sample(pullable)(listenable);
   const sink = makeSink();
   source(0, sink);
 
@@ -231,7 +231,7 @@ test('it ends both listenable and pullable when sink ends', t => {
 
   const pullable = makePullable();
   const listenable = makeListenable();
-  const source = sample(listenable)(pullable);
+  const source = sample(pullable)(listenable);
   const sink = makeSink();
   source(0, sink);
 
@@ -348,7 +348,7 @@ test('it ends both pullable and sink when listenable ends', t => {
 
   const pullable = makePullable();
   const listenable = makeListenable();
-  const source = sample(listenable)(pullable);
+  const source = sample(pullable)(listenable);
   const sink = makeSink();
   source(0, sink);
 
